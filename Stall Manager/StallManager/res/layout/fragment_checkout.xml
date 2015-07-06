@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextCSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCTotalBefore"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCTotalBefore"
+        android:layout_below="@+id/editTextCTotalBefore"
+        android:text="Total Before Discounts"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewC7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCCreditCardNum"
+        android:layout_below="@+id/editTextCCreditCardNum"
+        android:text="Credit Card Number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewC8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCSearch"
+        android:layout_below="@+id/editTextCSearch"
+        android:text="Email address of Customer"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextCTotalBefore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewC8"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextCCreditCardNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewC1"
+        android:layout_below="@+id/textViewC5"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewC9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCExpDate"
+        android:layout_below="@+id/editTextCExpDate"
+        android:text="Exp. Date"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextCExpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewC7"
+        android:layout_alignRight="@+id/textViewC7"
+        android:layout_below="@+id/textViewC7"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextCSecCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewC9"
+        android:layout_alignRight="@+id/editTextCCreditCardNum"
+        android:layout_toRightOf="@+id/textViewC7"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewC10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewC9"
+        android:layout_alignBottom="@+id/textViewC9"
+        android:layout_alignLeft="@+id/editTextCSecCode"
+        android:text="Sec. Code"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonCCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewC10"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/editTextCExpDate"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonCManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCCancel"
+        android:layout_alignBottom="@+id/buttonCCancel"
+        android:layout_alignLeft="@+id/textViewC9"
+        android:text="Manual" />
+
+    <TextView
+        android:id="@+id/textViewC5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCCreditCardNum"
+        android:layout_centerVertical="true"
+        android:text="Credit Card"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonCSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewC5"
+        android:layout_centerHorizontal="true"
+        android:text="Swipe" />
+
+</RelativeLayout>

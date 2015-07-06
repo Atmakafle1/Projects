@@ -1,0 +1,4 @@
+1. Can you provide a collection of essay text files?
+We gave an example essay and the corresponding test results with the project assignment on t-square. We can not provide more than that.
+2. Do you want to collect users' statistics?
+No. You can add it as an extra feature if you like but the base requirements have to be met. The required output is the averge word count.

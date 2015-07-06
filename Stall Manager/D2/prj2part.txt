@@ -1,0 +1,119 @@
+#Add Customer
+First Name:
+	Empty.				[error]
+	Spaces.				[error] 
+	Alpha characters.
+	Non-alpha characters.		
+Last Name:
+	Empty.				[error]
+	Spaces.				[error]
+	Alpha characters.
+	Non-alpha characters.
+Email Address:
+	Empty.				[error]
+	Spaces.				[error]
+	Alpha characters.
+	Non-alpha characters.
+ZipCode:
+	Empty.				[error]
+	Spaces.				[error]
+	Non-alpha characters.		[error]
+	Numbers.
+Add Button:
+	Correct field input.		[single]
+	Incorrect field input.		[error]
+Cancel Button:
+	Empty.				[single]
+	Not empty.			[single]
+	
+#Edit Customer
+Search:
+	Email address found.		
+	Email address not found.	[error]
+	Empty.				[error]
+First Name:
+	Empty.				[error]
+	Spaces.				[error]
+	Alpha characters.		
+	Non-alpha characters.		
+Last Name:
+	Empty.				[error]
+	Spaces.				[error]
+	Alpha Characters.		
+	Non-alpha characters.		
+Email Address:
+	Empty.				[error]
+	Spaces.				[error]
+	Alphanumeric Characters.
+	
+ZipCode:
+	Empty.				[error]
+	Spaces.				[error]
+	Alphanumeric Characters.	[error]
+	Numbers.
+Cancel:
+	Empty.				[single]
+	Not empty.			[singe]
+Save:
+	Correct field input.		
+	Incorrect field input.		[error]
+
+#Checkout Make Payment
+Email address:
+	Empty.				[error]
+	Email address exists.			
+	Email address does not exist.	
+Total:
+	Empty.				[error]
+	=0.				[error]
+	>1.
+	<1.		
+Swipe:
+	Successful.				
+	Not successful.			[error]
+Cancel:
+	Empty.				[single]
+	Not Empty.			[single]
+
+#Process Payment
+Total:
+	=0.				[single]	
+	>1.				
+	<1.				[error]
+	>1 with rewards.
+	<1 with rewards.		[error]	
+	>100.				[property over100]	
+Rewards:
+	Available.			[property availRewards]
+	Not available.		
+	Gold.				[property gold]
+Payment with rewards:
+	Total with gold discount.	[if gold]
+	Total with reward discount.	[if availRewards]
+	Total without discount.		[if !availRewards && !gold]
+	Total less than 1 with rewards	[error][if availRewards]
+
+#Reward Acquisistion	
+Total Spendings in Current Year:
+	More than $1000.		[single]
+	Less than $1000.		[single]
+Total in current transaction:
+	Over $100.			[single]	
+	Under $100.			[single]	
+#Email
+Gold email:
+	Total puts member over gold threshold.	[single]
+	Totat does not.				[single]
+Reward email
+	Total over $100.		[single][if over100]
+	Total under $100.		[single][if !over100]
+
+#View Transaction
+Email address:
+	Empty.				[single]
+	Email address found.		[property found]
+	Email address not found.	[error]
+Transaction ID:
+	Empty.				[if found]	
+	Not empty.			[if found]
+

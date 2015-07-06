@@ -1,0 +1,5 @@
+This is an example of a sentence that spans
+multiple lines in
+the text file. We ne%.ed to handle it.
+In addition% it also contains some weird characters%
+that are not% that common%.

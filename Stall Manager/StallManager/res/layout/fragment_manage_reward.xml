@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextMSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonMSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextMSearch"
+        android:layout_alignBottom="@+id/editTextMSearch"
+        android:layout_toRightOf="@+id/editTextMSearch"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/textViewM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMSearch"
+        android:layout_below="@+id/buttonMSearch"
+        android:layout_marginTop="44dp"
+        android:text="Result: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMSearch"
+        android:layout_below="@+id/editTextMSearch"
+        android:text="Email Address to Search for"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextMTotalReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewM2"
+        android:layout_below="@+id/textViewM2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewM3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMTotalReward"
+        android:layout_below="@+id/editTextMTotalReward"
+        android:text="Total Reward Accrued"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewM4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonGoldMember"
+        android:layout_below="@+id/toggleButtonGoldMember"
+        android:text="Gold Member"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonGoldMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewM3"
+        android:layout_centerVertical="true"
+        android:text="ToggleButton" />
+
+    <Button
+        android:id="@+id/buttonMCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonMSave"
+        android:layout_alignBottom="@+id/buttonMSave"
+        android:layout_alignRight="@+id/editTextMTotalReward"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonMSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewM4"
+        android:layout_below="@+id/textViewM4"
+        android:layout_marginTop="32dp"
+        android:text="Save" />
+
+</RelativeLayout>
